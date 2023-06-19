@@ -463,15 +463,23 @@
 
 /* News Carousel*/
 
-.news-carousel .owl-carousel-item img {
+.site-section {
+    padding: 2.5em 0; }
+    @media (min-width: 768px) {
+      .site-section {
+        padding: 7em 0; } }
+    .site-section.site-section-sm {
+      padding: 4em 0; }
+  
+  .site-section-heading {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
     position: relative;
-    width: 100%;
-    height: 100%;
-    /*object-fit: cover;*/
-}
-.news-carousel-item{
-    margin: 20px;
-}
+    font-size: 2.5rem; }
+    @media (min-width: 768px) {
+      .site-section-heading {
+        font-size: 3rem; } }
+  
 /*** Contact ***/
 @media (min-width: 992px) {
     .container.contact-page {
@@ -553,3 +561,91 @@
 .footer .copyright a {
     color: var(--light);
 }
+/*latest news*/
+
+/* For Meranda*/
+.date-read {
+    color: #b4b4b4; }
+  
+  .post-entry-1, .post-entry-2 {
+    font-size: .9rem;
+    margin-bottom: 30px; }
+    .post-entry-1 img, .post-entry-2 img {
+      margin-bottom: 30px; }
+    .post-entry-1 h2, .post-entry-2 h2 {
+      font-size: 20px; }
+      .post-entry-1 h2 a, .post-entry-2 h2 a {
+        color: #000; }
+  
+  .post-entry-2 {
+    font-size: .9rem; }
+    .post-entry-2 .thumbnail {
+      background-size: cover;
+      background-position: center;
+      width: 30%; }
+    .post-entry-2 .contents {
+      width: 70%;
+      padding: 10px 20px; }
+      .post-entry-2 .contents h2 {
+        font-size: 15px; }
+  
+  .trend-entry {
+    margin-bottom: 30px; }
+    .trend-entry .number {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+      flex: 0 0 50px;
+      font-size: 30px;
+      line-height: 1;
+      color: #ccc; }
+    .trend-entry .trend-contents h2 {
+      font-size: 18px; }
+      .trend-entry .trend-contents h2 a {
+        color: #000; }
+  
+  .caption {
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem; }
+    .caption.small {
+      font-size: .6rem; }
+  
+  .half-post-entry .caption {
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem; }
+  
+  .half-post-entry .img-bg, .half-post-entry .contents {
+    width: 50%; }
+    @media (max-width: 991.98px) {
+      .half-post-entry .img-bg, .half-post-entry .contents {
+        width: 100%;
+        height: 300px; } }
+  
+  .half-post-entry .img-bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  
+  .half-post-entry .contents {
+    padding: 50px;
+    font-size: .9rem;
+    height: auto; }
+    @media (max-width: 991.98px) {
+      .half-post-entry .contents {
+        padding: 30px; } }
+    .half-post-entry .contents h2 {
+      font-size: 26px; }
+      .half-post-entry .contents h2 a {
+        color: #000; }
+  
+  .more {
+    color: #8bc34a;
+    text-transform: uppercase;
+    font-size: .83rem; }
+  
+    
+.post-meta {
+    font-size: .8rem; }
+    .post-meta a {
+      color: #000; }
