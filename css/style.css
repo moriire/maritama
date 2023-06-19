@@ -1,5 +1,5 @@
 :root {
-    --primary: #FF3E41;
+    --primary: #0d6efd;
     --secondary: #51CFED;
     --light: #F8F2F0;
     --dark: #060315;
@@ -32,6 +32,76 @@
     opacity: 1;
 }
 
+/*Blog*/
+
+.section-title h2:before {
+    margin: 0 15px 10px 0;
+  }
+  
+  .section-title h2:after {
+    margin: 0 0 10px 15px;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+/* Recent-posts Section - Home Page
+------------------------------*/
+.recent-posts article {
+    background-color: var(--primary);
+    box-shadow: 0 4px 16px rgba(var(--color-default-rgb), 0.1);
+    padding: 30px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .recent-posts .post-img {
+    max-height: 240px;
+    margin: -30px -30px 15px -30px;
+    overflow: hidden;
+  }
+  
+  .recent-posts .post-category {
+    font-size: 16px;
+    color: rgba(var(--color-default-rgb), 0.5);
+    margin-bottom: 10px;
+  }
+  
+  .recent-posts .title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .recent-posts .title a {
+    color: var(--color-secondary);
+    transition: 0.3s;
+  }
+  
+  .recent-posts .title a:hover {
+    color: var(--color-primary);
+  }
+  
+  .recent-posts .post-author-img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .recent-posts .post-author {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .recent-posts .post-date {
+    font-size: 14px;
+    color: rgba(var(--color-default-rgb), 0.5);
+    margin-bottom: 0;
+  }
+  
 
 /*** Button ***/
 .btn {
@@ -391,7 +461,17 @@
     border-color: var(--primary);
 }
 
+/* News Carousel*/
 
+.news-carousel .owl-carousel-item img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+}
+.news-carousel-item{
+    margin: 20px;
+}
 /*** Contact ***/
 @media (min-width: 992px) {
     .container.contact-page {

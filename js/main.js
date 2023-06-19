@@ -89,7 +89,6 @@
         ]
     });
 
-
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -97,6 +96,7 @@
         center: true,
         dots: true,
         loop: true,
+        nav : true,
         responsive: {
             0:{
                 items:1
@@ -106,6 +106,25 @@
             },
             992:{
                 items:3
+            }
+        }
+    });
+
+    //News carousel
+    $(".news-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 3000,
+        center: true,
+        loop: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:2
             }
         }
     });
