@@ -4,7 +4,19 @@
     --light: #F8F2F0;
     --dark: #060315;
 }
-
+h3.text-primary, .text-primary{
+    color: var(--primary) !important;
+}
+.border-primary{
+    border-color: var(--primary)!important;
+}
+.bg-primary{
+    background-color: var(--primary)!important;
+}
+.btn.btn-primary{
+    background-color: var(--primary)!important;
+    border-color: var(--color-primary);
+}
 .fw-medium {
     font-weight: 600 !important;
 }
