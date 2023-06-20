@@ -96,7 +96,7 @@
         center: true,
         dots: true,
         loop: true,
-        nav : true,
+        //nav : true,
         responsive: {
             0:{
                 items:1
