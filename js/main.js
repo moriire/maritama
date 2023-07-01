@@ -83,6 +83,8 @@
         dots: false,
         loop: true,
         nav : true,
+		animateOut: "slideOutDown",
+		animateIn: "flipInX",
         navText : [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
