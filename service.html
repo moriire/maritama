@@ -375,6 +375,7 @@ We understand that businesses may face fluctuations in demand, and we are prepar
                 serve.forEach(content => {
                     var para =  document.createElement("p")
                     para.textContent = content;
+                    para.className = "justify"
                     document.getElementById("serve-paragraph").append(para) //innerHTML=para
                 });
                 serviceType.innerHTML = refLoc().replace("_", " ");
