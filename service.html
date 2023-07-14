@@ -195,14 +195,15 @@ We understand that businesses may face fluctuations in demand, and we are prepar
                 </div>
                 <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about1.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/about1.jpg" style="object-fit: cover;" alt="" id="service-image">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
- <!-- Service Start -->
+        
+    <!-- Service Start -->
     <div class="container-xxl py-5" id="services">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -213,7 +214,7 @@ We understand that businesses may face fluctuations in demand, and we are prepar
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/services/2.jpg" alt="">
+                            <img class="img-fluid" src="img/services/air_freight.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Air Freight</h4>
                         <p class="fixed-height justify">
@@ -225,7 +226,7 @@ We understand that businesses may face fluctuations in demand, and we are prepar
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/services/4.jpg" alt="">
+                            <img class="img-fluid" src="img/services/sea_freight.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Sea Freight</h4>
                         <p class="fixed-height justify">
@@ -236,7 +237,7 @@ We understand that businesses may face fluctuations in demand, and we are prepar
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/services/1.jpg" alt="">
+                            <img class="img-fluid" src="img/services/road_freight.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Road Freight</h4>
                         <p class="fixed-height justify">
@@ -248,7 +249,7 @@ We understand that businesses may face fluctuations in demand, and we are prepar
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/services/5.jpg" alt="">
+                            <img class="img-fluid" src="img/services/haulage.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Haulage</h4>
                         <p class="fixed-height justify">
@@ -272,13 +273,13 @@ We understand that businesses may face fluctuations in demand, and we are prepar
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/services/3.jpg" alt="">
+                            <img class="img-fluid" src="img/services/warehousing.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Warehouse Solutions</h4>
                         <p class="fixed-height justify">
                             Unlock the potential of your logistics operations and drive business growth with our state-of-the-art warehousing services. We also offer ...
                         </p>
-                        <a class="btn-slide mt-2" href="service.html?cont=warehouse_solution"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <a class="btn-slide mt-2" href="service.html?cont=warehousing"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
             </div>
@@ -351,6 +352,7 @@ We understand that businesses may face fluctuations in demand, and we are prepar
     <script>
         let serviceType = document.getElementById("service-type")
         let serviceAbout = document.getElementById("service-about")
+        let serviceImage = document.getElementById("service-image")
         const services = [
             {"air_freight": ["Experience the speed, reliability, and flexibility of our comprehensive air freight services. At Maritama Logistics, we offer a wide range of air freight solutions to meet your specific needs. Whether you require express, standard, or special cargo services, we have the expertise and resources to deliver exceptional results.", "Our express services are designed for urgent shipments, ensuring the fastest possible delivery times to meet your time-sensitive demands. For cargo that is less time-critical, our standard services provide a cost-effective option without compromising on quality. We also specialize in handling special cargo, including oversized, heavy, or fragile shipments that require specialized care and attention.", "In addition to our air freight services, we provide a range of value-added services that enhance your shipping experience. Our customs clearance services expedite the process, ensuring your shipments are smoothly cleared through customs, minimizing delays, and avoiding costly fines. With our insurance options, you can have peace of mind knowing that your cargo is protected against loss or damage during transportation. Our advanced cargo tracking system keeps you updated on the whereabouts of your shipment, providing real-time visibility and control."]},
             {"sea_freight": []},
@@ -376,8 +378,8 @@ We understand that businesses may face fluctuations in demand, and we are prepar
                     document.getElementById("serve-paragraph").append(para) //innerHTML=para
                 });
                 serviceType.innerHTML = refLoc().replace("_", " ");
-                serviceAbout.innerHTML = `Best in ${ refLoc().replace("_", " ")}`
-                //serviceType.innerHTML = refLoc().replace("_", " ")
+                serviceAbout.innerHTML = `Best in ${ refLoc().replace("_", " ")}`;
+                serviceImage.src = `img/services/${refLoc()}.jpg`
             }else{
                 alert("page unavailable")
             }
